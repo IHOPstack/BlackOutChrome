@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "OLED Midnight Mode",
+    "version": "1.0",
+    "description": "Drastically reduces light exposure by utilizing OLED's true black as the default background, and keeping other colors soft on the eyes.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "css": ["styles.css"],
+        "js": ["content.js"],
+        "run_at": "document_start"
+      }
+    ]
+  }
