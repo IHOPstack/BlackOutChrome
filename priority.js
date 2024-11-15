@@ -1,4 +1,4 @@
-const defaultBackgrounds = document.createElement(style);
+const defaultBackgrounds = document.createElement('style');
 defaultBackgrounds.innerhtml = `
 html, body {
   background-color: #000000;
